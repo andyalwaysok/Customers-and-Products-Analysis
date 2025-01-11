@@ -8,7 +8,7 @@ Conduct Sales Data Analysis by answering below questions:
 - Question 3: How much can we spend on acquiring new customers?
 
 ## Database structure
-<img width="400" alt="image" src=>
+<img width="400" alt="image" src=https://github.com/andyalwaysok/Customers-and-Products-Analysis/blob/25692a709012fa9038535be94cec0c7f3c73f52d/sql1.png>
 
 ## 🔑 Questions and answers
 
@@ -25,7 +25,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 10
 ````
-<img width="400" alt="image" src=>
+<img width="400" alt="image" src=https://github.com/andyalwaysok/Customers-and-Products-Analysis/blob/25692a709012fa9038535be94cec0c7f3c73f52d/sql2.png>
 
 ### Write a query to compute the product performance for each product
 Low Stock = SUM(quantityOrdered) / quantityInStock
@@ -36,7 +36,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 10
 ````
-<img width="400" alt="image" src=>
+<img width="400" alt="image" src=https://github.com/andyalwaysok/Customers-and-Products-Analysis/blob/25692a709012fa9038535be94cec0c7f3c73f52d/sql3.png>
 
 ### Combine the previous queries using a Common Table Expression (CTE) to display priority products for restocking using the IN operator
 ````sql
@@ -59,7 +59,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 10
 ````
-<img width="400" alt="image" src=>
+<img width="400" alt="image" src=https://github.com/andyalwaysok/Customers-and-Products-Analysis/blob/25692a709012fa9038535be94cec0c7f3c73f52d/sql4.png>
 
 In above picture, we know what products to order more and order less. Which answers the first question.
 
@@ -73,7 +73,7 @@ JOIN orders o
 ON od.ordernumber = o.orderNumber
 GROUP BY 1
 ````
-<img width="400" alt="image" src=>
+<img width="400" alt="image" src=https://github.com/andyalwaysok/Customers-and-Products-Analysis/blob/25692a709012fa9038535be94cec0c7f3c73f52d/sql5.png>
 
 ### Find TOP 5 VIP customers that bring in the most profit for the store
 ````sql
@@ -92,7 +92,7 @@ ON c.customerNumber = r.customerNumber
 ORDER BY 5 DESC
 LIMIT 5
 ````
-<img width="400" alt="image" src=>
+<img width="400" alt="image" src=https://github.com/andyalwaysok/Customers-and-Products-Analysis/blob/25692a709012fa9038535be94cec0c7f3c73f52d/sql6.png>
 
 This answers the second question. We can have events to drive loyalty for the VIPs
 Also, we can launch a campaign for the less engaged customers that bring in less profit
@@ -135,7 +135,7 @@ SELECT year_month,
        ROUND(new_customer_total*100/total,1) AS new_customers_total_props
   FROM new_customers_by_month_table;
 ````
-<img width="400" alt="image" src=>
+<img width="400" alt="image" src=https://github.com/andyalwaysok/Customers-and-Products-Analysis/blob/25692a709012fa9038535be94cec0c7f3c73f52d/sql7.png>
 
 As you can see, the number of clients has been decreasing since 2003, and in 2004, we had the lowest values. 
 
@@ -157,6 +157,6 @@ SELECT ROUND(AVG(Revenue), 2) as LTV
 FROM rev
 ````
 
-<img width="400" alt="image" src=>
+<img width="400" alt="image" src=https://github.com/andyalwaysok/Customers-and-Products-Analysis/blob/25692a709012fa9038535be94cec0c7f3c73f52d/sql8.png>
 
 This is how much we can spend to accquire new customers
